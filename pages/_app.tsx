@@ -27,9 +27,11 @@ function MyApp({ Component, pageProps }: AppProps) {
   const LIGHT = "light";
   const [theme, setTheme] = useState(DARK);
   useEffect(() => {
-    if (window.matchMedia(`(prefers-color-scheme: ${LIGHT}`).matches) {
+    if (window.matchMedia(`(prefers-color-scheme: ${DARK}`).matches) {
+      console.log(`dark mode set ${DARK}`);
       setTheme(DARK);
     } else {
+      console.log(`light mode set ${LIGHT}`);
       setTheme(LIGHT);
     }
   }, []);
@@ -43,11 +45,10 @@ function MyApp({ Component, pageProps }: AppProps) {
   }, [theme]);
 
   return (
-    <div className="container mx-auto w-full h-full light:bg-gray-500 dark:bg-gray-900 light:text-black dark:text-white">
+    <div className="container mx-auto h-full w-full bg-gray-200 text-black dark:bg-red-900 dark:text-white">
       hi
     </div>
   );
-  return <Component {...pageProps} />;
 }
 
 export default MyApp;
