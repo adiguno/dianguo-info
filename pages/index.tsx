@@ -10,8 +10,7 @@ const Home: NextPage = () => {
       <Head>
         <title>Dian Guo</title>
         <meta name="description" content="Dian's Web Portfolio" />
-        {/* todo: change */}
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="favicon.ico" />
       </Head>
 
       <main></main>
