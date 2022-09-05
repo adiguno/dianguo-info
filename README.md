@@ -1,3 +1,7 @@
+# Notes
+- also using : `npm install -D prettier prettier-plugin-tailwindcss`
+- `npm install -D tailwindcss postcss autoprefixer`
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
